@@ -47,7 +47,7 @@ class Song
     artist = filename.split(" - ")[0]
     song_title = filename.split(" - ")[1].chomp('.mp3')
 
-    song = self.create_by_name(song_title)
+    song = Song.create_by_name(song_title)
     song.artist_name = artist
     song.save
 
