@@ -48,7 +48,7 @@ class Song
     song_title = filename.split(" - ")[1].chomp('.mp3')
 
     song = Song.create_by_name(song_title)
-
+    song.artist_name = artist
   end
 
 
