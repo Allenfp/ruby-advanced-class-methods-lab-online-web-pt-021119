@@ -40,7 +40,7 @@ class Song
   end
 
   def self.alphabetical
-    self.name.sort {|x| x.name}
+    @@all.sort {{ |x,y| y <=> x }}
   end
 
 
