@@ -49,6 +49,7 @@ class Song
 
     song = Song.create_by_name(song_title)
     song.artist_name = artist
+    song.save
     
   end
 
